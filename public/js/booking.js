@@ -13,7 +13,7 @@ $(document).ready(function() {
     if (order.service == 'Query from contact page') {
 
         $.ajax({
-            url: "https://yidikam-sendmail.herokuapp.com/api/appointment/book",
+            url: "https://ydikammail.herokuapp.com/api/appointment/book",
             type: "POST",
             data: order,
             success: function(response) {
@@ -26,7 +26,7 @@ $(document).ready(function() {
         });
     } else {
         $.ajax({
-            url: "https://mailydikam.herokuapp.com/api/appointment/book",
+            url: "https://ydikammail.herokuapp.com/api/appointment/book",
             type: "POST",
             data: order,
             success: function(response) {

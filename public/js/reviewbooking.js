@@ -12,11 +12,11 @@ $(document).ready(function() {
 
 
     $.ajax({
-        url: "https://yidikam-sendmail.herokuapp.com/api/appointment/book",
+        url: "https://ydikammail.herokuapp.com/api/appointment/book",
         type: "POST",
         data: order,
         success: function(response) {
-            window.location.replace("./reviewconfirmation.html.html");
+            window.location.replace("./reviewconfirmation.html");
             localStorage.removeItem('order');
         },
         error: function(jqXHR, response, errorThrown) {
