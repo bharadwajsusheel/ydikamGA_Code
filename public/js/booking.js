@@ -9,6 +9,7 @@ $(document).ready(function() {
     console.log(order);
     // alert(order);
 
+
     if (order.service == 'Query from contact page') {
 
         $.ajax({
@@ -24,9 +25,8 @@ $(document).ready(function() {
             }
         });
     } else {
-
         $.ajax({
-            url: "https://yidikam-sendmail.herokuapp.com/api/appointment/book",
+            url: "https://mailydikam.herokuapp.com/api/appointment/book",
             type: "POST",
             data: order,
             success: function(response) {
