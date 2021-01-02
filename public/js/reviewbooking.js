@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 
     $.ajax({
-        url: "https://mailydikam.herokuapp.com/api/appointment/book",
+        url: "https://yidikam-sendmail.herokuapp.com/api/appointment/book",
         type: "POST",
         data: order,
         success: function(response) {
